@@ -1,6 +1,12 @@
-#fCRORIAL
-def fac(n):
-    f=1
-    while n>=1:
-        f=f*n
-        n=n-1
+def factorial(n):
+    res = 1
+    for i in range(1,n+1):
+        res *= i
+    return res
+
+def main():
+    n=int(input("enter a number: "))
+    print(factorial(n))
+    
+if __name__ == "__main__":
+    main()
